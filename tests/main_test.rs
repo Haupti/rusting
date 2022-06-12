@@ -28,3 +28,13 @@ fn it_returns_buzz_on_divisible_by_five() {
     }
 }
 
+#[test]
+fn it_returns_fizzbuzz_on_fizzbuzz() {
+    for three_power in 1..3 {
+        for five_power in 1..3 {
+            let input: i32 = 3_i32.pow(three_power) * 5_i32.pow(five_power);
+            let actual: String = fizzbuzz(input);
+            assert_eq!(actual, "fizzbuzz")
+        }
+    }
+}
