@@ -3,5 +3,5 @@ pub fn main() {
 }
 
 pub fn fizzbuzz(x: i32) -> String {
-    return String::from("");
+    return format!("{x}")
 }
